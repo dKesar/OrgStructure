@@ -1,0 +1,61 @@
+/* src/components/OrgChart/OrgChart.css */
+.org-chart-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: calc(100% - 100px);
+    overflow: auto;
+    padding: 20px;
+}
+
+.node {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative; /* Для позиционирования имени и кружка */
+}
+
+.node-content {
+    display: flex; /* Используем flexbox для расположения элементов */
+    flex-direction: column; /* Вертикальное направление */
+    align-items: center; /* Центрируем по горизонтали */
+}
+
+.node-name {
+    margin-bottom: 5px; /* Отступ снизу для имени */
+    cursor: pointer; /* Курсор при наведении */
+    font-weight: bold; /* Жирный шрифт для имени */
+    position: relative; /* Для позиционирования */
+    top: -10px; /* Поднимаем имя выше */
+}
+
+.node-circle {
+    width: 50px; /* Ширина кружка */
+    height: 50px; /* Высота кружка */
+    border-radius: 50%; /* Закругление для создания круга */
+    background-color: #007bff; /* Цвет фона кружка */
+    margin-bottom: 10px; /* Отступ снизу для кружка */
+}
+
+.node p {
+    margin: 5px 0; /* Отступы для параграфов */
+    color: #666; /* Цвет текста */
+}
+
+.delete-button {
+    margin-top: 10px; /* Отступ сверху для кнопки удаления */
+    padding: 5px 10px; /* Отступы для кнопки */
+    border: none; /* Убираем границу */
+    border-radius: 5px; /* Закругление углов кнопки */
+    background-color: #ff4d4d; /* Цвет фона кнопки */
+    color: white; /* Цвет текста кнопки */
+    cursor: pointer; /* Курсор при наведении */
+}
+
+.delete-button:hover {
+    background-color: #ff1a1a; /* Цвет фона кнопки при наведении */
+}

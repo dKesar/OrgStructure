@@ -1,0 +1,73 @@
+/* src/styles/App.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Устанавливаем box-sizing для всех элементов */
+}
+
+.App {
+  display: flex; /* Используем flexbox для вертикального расположения */
+  flex-direction: column; /* Вертикальное направление */
+  align-items: center; /* Центрируем по горизонтали */
+  justify-content: flex-start; /* Начинаем с верхней части */
+  height: 100%; /* Занимаем всю высоту */
+  padding: 20px; /* Отступы вокруг приложения */
+  background-color: #f4f4f4; /* Цвет фона */
+}
+
+h1 {
+  color: #333; /* Цвет заголовка */
+}
+
+.search-container {
+  display: flex; /* Используем flexbox для расположения элементов */
+  flex-direction: column; /* Вертикальное направление */
+  align-items: center; /* Центрируем по горизонтали */
+  margin: 20px 0; /* Отступы для контейнера поиска */
+}
+
+.search-input {
+  margin-bottom: 10px; /* Отступ снизу для поля поиска */
+  padding: 10px; /* Отступы внутри поля */
+  width: 300px; /* Ширина поля поиска */
+  border: 1px solid #ddd; /* Граница поля поиска */
+  border-radius: 5px; /* Закругление углов */
+}
+
+.criteria {
+  display: flex; /* Используем flexbox для расположения чекбоксов */
+  justify-content: center; /* Центрируем по горизонтали */
+  gap: 15px; /* Промежуток между чекбоксами */
+}
+
+.criteria label {
+  display: flex; /* Используем flexbox для чекбоксов */
+  align-items: center; /* Центрируем по вертикали */
+  cursor: pointer; /* Курсор при наведении */
+}
+
+.add-employee-form {
+  margin: 20px 0; /* Отступы для формы добавления сотрудника */
+}
+
+.add-employee-form input,
+.add-employee-form select {
+  margin: 5px; /* Отступы для полей ввода и выпадающего списка */
+  padding: 10px; /* Отступы внутри полей */
+  border: 1px solid #ddd; /* Граница для полей */
+  border-radius: 5px; /* Закругление углов */
+  width: 300px; /* Ширина полей и выпадающего списка */
+}
+
+.add-employee-form button {
+  padding: 10px 15px; /* Отступы для кнопки */
+  border: none; /* Убираем границу */
+  border-radius: 5px; /* Закругление углов */
+  background-color: #007bff; /* Цвет фона кнопки */
+  color: white; /* Цвет текста кнопки */
+  cursor: pointer; /* Курсор при наведении */
+}
+
+.add-employee-form button:hover {
+  background-color: #0056b3; /* Цвет фона кнопки при наведении */
+}
